@@ -1,0 +1,31 @@
+Completed the fuctionality and project settings :
+API :
+1. AIPlayer : This class is basically responsible for suggesting the computer the move to make
+    1. suggestMove : This function helps in suggesting the move to the computer.
+2. Engine : This is where our game starts and  a move is made.
+    1. start : This function basically checks whether the game that is started is a TicTacToe game. If yes then this starts the game by returning a TICTACTOE object.
+   2. move : This helps in making a move and storing it in the cells.
+
+3. GameRuleManager : This class is responsible for checking legal moves and determining if a player has won, lost or tied.
+    1. getGameState : This function is responsible for checking the legal moves.
+
+4. TicTac : This class is basically TicTacToe class where a cell is defined. This extends the board class.
+    1. Cell : This is an object reference for a cell class.
+   2.  cells[] : This is where all the moves are stored.
+   3. setCell : This function is responsible for storing the legal moves that have been made.
+   4. move : This method is implemented from the Board class which basically helps in storing the moves.
+   5. toString : This method is override to visualise the board and the moves made.
+
+5. Board : This is an abstract class. This is abstract because a board can be of any game like Chess etc.
+   1. move() : This method is defined here because a move can be different in Chess and in other games.
+
+6. Cell : This is basically the structure of a cell which has rows and columns as its members.
+7. GameResult : This class has two members playerWon and isComplete which basically tells us whether the game is complete and which player won.
+8. Move : This class defines how a move is made.
+    1. Player : It has a member of type player which tells which player has made a move.
+   2. cell : This member tells on which cell the move has been made.
+
+9. Player : This is a call which defines a player. It has a member symbol which tells whether the player is "X" or "0".
+
+
+---- Written 5 test cases which are working right now.

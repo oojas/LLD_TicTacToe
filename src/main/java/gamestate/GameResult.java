@@ -2,7 +2,7 @@ package gamestate;
 
 public class GameResult{
     public boolean getGameComplete() {
-       return !gameComplete;
+       return gameComplete;
     }
 
    public  boolean gameComplete;

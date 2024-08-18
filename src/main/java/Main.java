@@ -17,7 +17,7 @@ public class Main {
         GameRuleManager ruleManager=new GameRuleManager();
         // Making moves
         System.out.println(board);
-        while(ruleManager.getState(board).getGameComplete()){
+        while(!ruleManager.getState(board).getGameComplete()){
             Player computer=new Player("0"),human=new Player("X");
             System.out.println("Make your move!");
             int row=sc.nextInt();
@@ -25,7 +25,7 @@ public class Main {
             Move humanMove=new Move(new Cell(row,col),human);
             eng.move(board,humanMove);
             System.out.println(board);
-            if(ruleManager.getState(board).getGameComplete()){
+            if(!ruleManager.getState(board).getGameComplete()){
                 Move compMove=aiPlayer.suggestMove(board,computer);
                 eng.move(board,compMove);
             }
