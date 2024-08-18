@@ -1,0 +1,1 @@
+S : Single Responsibility Principle : If your piece of code is doing one thing, make sure that it does that thing perfectly well and does only one thing.
